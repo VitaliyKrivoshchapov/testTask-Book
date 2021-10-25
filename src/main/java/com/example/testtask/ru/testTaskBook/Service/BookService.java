@@ -1,7 +1,6 @@
 package com.example.testtask.ru.testTaskBook.Service;
 
-import com.example.testtask.ru.testTaskBook.Entity.Book;
-import org.springframework.http.HttpStatus;
+import com.example.testtask.ru.testTaskBook.Model.Book;
 
 import java.util.List;
 

@@ -1,5 +1,5 @@
 
-package com.example.testtask.ru.testTaskBook.Entity;
+package com.example.testtask.ru.testTaskBook.Model;
 
 import lombok.*;
 

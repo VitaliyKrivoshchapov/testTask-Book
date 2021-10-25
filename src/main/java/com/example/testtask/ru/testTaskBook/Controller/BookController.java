@@ -1,9 +1,8 @@
 package com.example.testtask.ru.testTaskBook.Controller;
 
 import com.example.testtask.ru.testTaskBook.Service.BookServiceImpl;
-import com.example.testtask.ru.testTaskBook.Entity.Book;
+import com.example.testtask.ru.testTaskBook.Model.Book;
 
-import io.swagger.annotations.Api;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -31,7 +30,6 @@ public class BookController {
         //System.out.println("Работает getAll");
         return bookServiceImpl.getAllBooks();
     }
-
     @GetMapping("{id}")
     public ResponseEntity<Book> getBookById( @PathVariable("id") long id){
         //System.out.println("Работает getBookById" + id);

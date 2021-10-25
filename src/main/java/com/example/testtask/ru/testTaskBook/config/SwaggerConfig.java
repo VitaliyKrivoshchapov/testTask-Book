@@ -22,13 +22,11 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
     @Bean
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2).select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.testtask"))
-                .paths(regex("/Entity"))
-                .paths(regex("/api.*"))
+                .apis(RequestHandlerSelectors.basePackage("com.example"))
+                .paths(regex("/api/.*"))
                 .build()
                 .apiInfo(metaData());
     }
-
 
     private ApiInfo metaData() {
         return new ApiInfoBuilder()

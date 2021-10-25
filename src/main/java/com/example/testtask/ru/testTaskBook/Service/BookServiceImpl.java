@@ -1,13 +1,12 @@
 package com.example.testtask.ru.testTaskBook.Service;
 
-import com.example.testtask.ru.testTaskBook.Entity.Book;
+import com.example.testtask.ru.testTaskBook.Model.Book;
 import com.example.testtask.ru.testTaskBook.Exception.ResourceNotFoundException;
 import com.example.testtask.ru.testTaskBook.Reposittory.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class BookServiceImpl implements BookService{
