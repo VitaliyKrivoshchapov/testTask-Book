@@ -3,6 +3,7 @@ package com.example.testtask.ru.testTaskBook.Controller;
 import com.example.testtask.ru.testTaskBook.Service.BookServiceImpl;
 import com.example.testtask.ru.testTaskBook.Entity.Book;
 
+import io.swagger.annotations.Api;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
