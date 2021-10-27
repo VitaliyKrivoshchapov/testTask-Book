@@ -39,13 +39,13 @@ public class BookController {
     @PutMapping("{id}")
     public ResponseEntity<Book> updateBook(@PathVariable("id") long id, @RequestBody Book book ){
        //Работает
-        //System.out.println("Работает put на обновление");
+       //System.out.println("Работает put на обновление");
         return new ResponseEntity<Book>(bookServiceImpl.updateBook(book,id), HttpStatus.OK);
     }
 
     @DeleteMapping("{id}")
     public ResponseEntity<String> deleteBook(@PathVariable("id") long id){
-        System.out.println("Удаляем " + getBookById(id));
+        //System.out.println("Удаляем " + getBookById(id));
         bookServiceImpl.deleteBook(id);
         return  new ResponseEntity<String>("Book was delete", HttpStatus.OK);
     }
