@@ -2,7 +2,6 @@ package com.example.testtask.ru.testTaskBook.Service;
 
 import com.example.testtask.ru.testTaskBook.Model.Book;
 import com.example.testtask.ru.testTaskBook.Reposittory.BookRepository;
-import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -35,11 +34,11 @@ class BookServiceImplTest {
         Book resultBook = this.bookService.saveBook(book);
         //Book = this.bookService.getBookById(1);
         System.out.println(resultBook.getId());
-        Assert.assertEquals(1,resultBook.getId());
-        Assert.assertEquals("Капитанская дочка",resultBook.getNameBook());
-        Assert.assertEquals(1936,resultBook.getYear());
-        Assert.assertEquals("Иванов",resultBook.getReader());
-        Assert.assertEquals(1,resultBook.getIsbn());
+        assertEquals(1,resultBook.getId());
+        assertEquals("Капитанская дочка",resultBook.getNameBook());
+        assertEquals(1936,resultBook.getYear());
+        assertEquals("Иванов",resultBook.getReader());
+        assertEquals(1,resultBook.getIsbn());
     }
 
     @Test
